@@ -1,6 +1,7 @@
-name:                hangman
+name:                hpfp-hangman-testpkg
 version:             0.1.0.0
 synopsis:            A simple hangman like game, notes for ch 13 of haskellbook.com
+description:         A simple hangman like game, see README.md for more.
 homepage:            https://hpfp.readthedocs.io/en/latest/
 license:             BSD3
 license-file:        LICENSE
@@ -15,6 +16,6 @@ executable hangman
   main-is:             Main.hs
   hs-source-dirs:      src
   build-depends:       base >= 4.7 && < 5
-                     , random
-                     , split
+                     , random >= 1.2.0 && < 1.3
+                     , split >= 0.2.3 && < 0.3
   default-language:    Haskell2010
